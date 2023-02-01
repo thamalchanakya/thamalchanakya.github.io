@@ -368,4 +368,11 @@ form .btn2{
      .contact-left, .contact-right{
         flex-basis: 100%;
      }
+     .raw {
+        flex-direction: column;
+      }
+    
  }
+ .btn.btn2 {
+  display: inline-block;
+}
