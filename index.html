@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thamal's Portfolio Website</title>
+    <link  rel="stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet"/>
+
+</head>
+<body>
+<div id="header">
+     <div class="container">
+       <nav>
+           <img src="Images/logopng.png" class="logo">
+           <ul id="sidemenu">
+               <li><a href="#header">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <i class="fas fa-times" onclick="closemenu()"></i>
+           </ul>
+           <i class="fas fa-bars" onclick="openmenu()"></i>
+       </nav>
+       <div class="header-text">
+            <p>Data Science Undergraduate</p>
+            <h1>Hi, I'm <span>Thamal Chanakya</span><br>from Sri Lanka</h1>
+       </div>
+     </div>
+</div> 
+<!----------about---------->
+<div id="about"></div>
+       <div class="container">
+           <div class="row">
+               <div class="about-col-1">
+                <img src="Images/user.png.png">
+               </div>
+               <div class="about-col-2">
+                <h1 class="sub-tittle">About Me</h1>
+                <p>I am an energetic person with good interpersonal skills and I am looking forward an opportunity
+                     to pursue my career objectives in data science field which will enable me to contribute 
+                     my skills and experience while increasing my knowledge.</p>
+                
+                 
+                
+                <div class="tab-tittle">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                </div>
+                   <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>General Sir John Kotelawala Defence University</span><br>BSc in Applied Data Science Communication (reading)</li>
+                        <li><span>Thurstan College, Colombo 7</span><br>Advanced Level-Physical Science stream (2019)</li>
+                    </ul>
+                        
+               </div>
+               <div class="tab-contents" id="certifications">
+                <ul>
+                    <li id="certificateList">
+                      <div class="certificate-box">
+                        <div class="flex-box">
+                          <div>
+                            <span class="certificateTitle">AI-900</span><br />
+                            <p class="certificateContent">
+                              Microsoft certified AI Fundamentals
+                            </p>
+                            <img class="certificateImage" src="Images/AI-900.png" />
+                          </div>
+                          <div>
+                            <span class="certificateTitle">DP-900 </span><br />
+                            <p class="certificateContent">
+                              Microsoft certified Data Fundamentals
+                            </p>
+                            <img class="certificateImage" src="Images/DP-900.png" />
+                          </div>
+                        </div>
+                        <div class="flex-box">
+                          <div>
+                            <span class="certificateTitle">AZ-900 </span><br />
+                            <p class="certificateContent"></p>Microsoft certified Azure Fundamentals</p>
+                            <img class="certificateImage" src="Images/AZ-900.png" />
+                          </div>
+                          <div>
+                            <span class="certificateTitle">GDA </span><br />
+                            <p class="certificateContent">Google Data Analytics Professional Certificate</p>
+                            <img class="certificateImage" src="Images/GDA.png" />
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+            </div>
+           </div>
+       </div>
+    </div>
+<!--------portfolio------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-tittle">My Works</h1>
+    <div class= "work-list">
+        <div class="work">
+            <img src="Images/work-1.png.png">
+            <div class="layer">
+                <h3>SAARC SDG Evaluator</h3><br>
+                <p>SAARC SDG Evaluator is a simple and low-cost Power BI based reporting 
+                    solution that can be used to evaluate the SDG goals in the SAARC region.</p>
+                    
+             </div>
+       </div>
+        <div class="work">
+            <img src="Images/work-2.png.png">
+            <div class="layer">
+                <h3>Dashboard for LPL Batting Clustering </h3><br>
+                <p>Dashboard is filled with batting statistics of the players, clustering groups of the players 
+                    which is based on their performances and some R visualization plots.</p>
+                    
+            </div>
+     </div>
+        <div class="work">
+            <img src="Images/work-3.png.png">
+            <div class="layer">
+                <h3>Child Well-Being Monitor</h3><br>
+                <p>Child Well-Being Monitor is a simple and low-cost reporting solution that can analyse and 
+                    evaluate child poverty.</p>
+                    
+            </div>
+     </div>
+        <div class="work">
+            <img src="Images/work-4.png.png">
+            <div class="layer">
+                <h3>UK Safety Analyzer</h3><br>
+                <p>UK Road Safety Analyzer is a simple and low-cost reporting solution that can analyse and evaluate 
+                    serious roadside accidents.</p>
+                    
+                </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-----------contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="raw">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1><br>
+                <p><i class="fas fa-paper-plane"></i>thamalchanakya2@gmail.com</p><br>
+                <p>   <i class="fas fa-mobile-alt"></i>        0771191592</p>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/thamal-chanakya-7b7118209"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="Images/my cv.pdf" download="" class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="Copyright">
+        <p>Copyright © Thamal.</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+    }
+
+</script>
+
+</body>
+</html>
